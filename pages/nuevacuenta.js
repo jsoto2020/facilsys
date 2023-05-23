@@ -53,8 +53,8 @@ export const NuevaCuenta = () => {
          
 
             try {
-
-                 const resultado = axios.post('http://localhost:3000/api/operacion',JSON.stringify(valores))
+                 const servidor = process.env.HOST_NAME
+                 const resultado = axios.post(`${servidor}/api/operacion`,JSON.stringify(valores))
                     console.log('me conecte: ',resultado);
                     return resultado;
                 
