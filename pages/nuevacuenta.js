@@ -54,7 +54,7 @@ export const NuevaCuenta = () => {
 
             try {
                  const servidor = process.env.HOST_NAME
-                 const resultado = axios.post(`${servidor}/api/operacion`,JSON.stringify(valores))
+                 const resultado = axios.post(`https://facilsys.vercel.app/api/operacion`,JSON.stringify(valores))
                     console.log('me conecte: ',resultado);
                     return resultado;
                 
