@@ -50,7 +50,7 @@ const Index =() => {
     console.log('autenticado')
         try {
 
-          const resultado = axios.post('http://localhost:3000/api/clientes')
+          const resultado = axios.post('https://facilsys.vercel.app/api/clientes')
             console.log('clientes: ',resultado);
             
         
