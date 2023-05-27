@@ -32,8 +32,8 @@ export const Login = () => {
                          .required('El password es obligatorio')
         }),
         onSubmit: async valores =>{
-                    
-            axios.post('https://facilsys.vercel.app/api/autenticarusuario', JSON.stringify(valores))
+            
+            axios.post(`/api/autenticarusuario`, JSON.stringify(valores))
                         .then((response) => {
                             const {data } = response;
                             guardarMensaje('Autenticando...')

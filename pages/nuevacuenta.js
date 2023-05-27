@@ -54,7 +54,7 @@ export const NuevaCuenta = () => {
 
             try {
                 guardarMensaje('En proceso...')
-                 const resultado = axios.post(`https://facilsys.vercel.app/api/operacion`,JSON.stringify(valores))
+                 const resultado = axios.post(`/api/operacion`,JSON.stringify(valores))
                     console.log('me conecte: ',resultado);
                     guardarMensaje('Registrado')
                     router.push('/login')
