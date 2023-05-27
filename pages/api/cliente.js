@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   const pool = await connectToDB();
 
  const nombreObjeto = Object.keys(req.body)
- const { } = JSON.parse(nombreObjeto[0])
+ const {email } = JSON.parse(nombreObjeto[0])
  
 
   if (pool) {
