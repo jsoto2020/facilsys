@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
  const nombreObjeto = Object.keys(req.body)
  const {email } = JSON.parse(nombreObjeto[0])
- 
+ console.log('email:',email)
 
   if (pool) {
   
