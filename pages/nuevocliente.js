@@ -60,7 +60,7 @@ export const nuevoCliente = () => {
       
                 try {
 
-                    const resultado = axios.post('http://localhost:3000/api/cliente',JSON.stringify(valores))
+                    const resultado = axios.post('/api/cliente',JSON.stringify(valores))
                     console.log('cliente: ',resultado);
                     return resultado;
                 
