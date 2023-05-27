@@ -56,7 +56,7 @@ export const nuevoCliente = () => {
 
         }),
         onSubmit: async valores =>{
-      //      console.log(" valores: ",valores);
+           console.log(" valores: ",valores);
       
                 try {
 
