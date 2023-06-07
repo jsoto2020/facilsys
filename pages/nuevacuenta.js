@@ -50,7 +50,7 @@ export const NuevaCuenta = () => {
         }),
         onSubmit: async valores =>{
                   
-         
+         console.log('valores: ',valores)
 
             try {
                 guardarMensaje('En proceso...')
